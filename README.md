@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Space Radio
 
-## Getting Started
+An interactive, scroll-driven 3D product story for the Chronos Collection. The experience presents a luxury chronograph through animated chapters, technical callouts, and a real-time Three.js scene.
 
-First, run the development server:
+## Requirements
+
+- Node.js 20.9 or newer
+- npm
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm start` | Serve the production build |
+| `npm run lint` | Run ESLint |
 
-## Learn More
+## Routes
 
-To learn more about Next.js, take a look at the following resources:
+- `/` — Scroll-driven Chronos product story
+- `/collection` — Collection page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Controls
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Scroll to move between story chapters.
+- Use the chapter navigation or number keys `1`–`7` to jump to a chapter.
+- Use `J`/`ArrowDown` for the next chapter and `K`/`ArrowUp` for the previous chapter.
+- Audio feedback is muted by default and can be enabled in the experience.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3D model assets are stored in [`public/models`](./public/models).
